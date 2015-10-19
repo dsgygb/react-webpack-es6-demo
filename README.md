@@ -8,7 +8,9 @@ demo是一个简单的留言板系统.使用es6的语法,用react+webpack+webpac
 
 先下载:
 
-        git clone 
+        git clone git@github.com:dsgygb/react-webpack-es6-demo.git
+        
+然后运行server.js即可:
 
         cd react-webpack-es6-demo
 
