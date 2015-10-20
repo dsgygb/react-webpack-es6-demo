@@ -10,7 +10,8 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.jsx?$/, loaders: ['babel']},
-            { test: /\.less$/, loader: "style!css!less" }
+            { test: /\.less$/, loader: "style!css!autoprefixer!less" },
+            {test: /\.png$/,loader:"url-loader?limit=10000"}
         ]
 
     },
@@ -19,6 +20,7 @@ module.exports = {
         extensions: ['','.less','.js', '.jsx', '.json', '.coffee']
     },
     plugins: [
+        new webpack.NoErrorsPlugin(),
         // Webpack压缩代码的时候，React官方提供的代码已经是合并的, 可以通过以下插件优化
         new webpack.DefinePlugin({
             "process.env": {
