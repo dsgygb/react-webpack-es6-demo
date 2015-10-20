@@ -1,28 +1,36 @@
 @baseFontSize:20px;
 
 
-.commentForm input{
-  margin:20px;
+.commentForm{
+  display:flex;
+  flex-flow:column wrap;
+  min-width:400px;
+  margin:0 auto;
+  justify-content:space-around;
+  height:500px;
+  flex:0 1 auto;
+}
+
+.commentForm input[type=text]{
   font-size:@baseFontSize;
   height:40px;
-  width:200px;
+  min-width:200px;
   display:block;
 
 }
 
 .commentForm button[type=submit]{
   display:block;
-  margin:20px;
-  width:200px;
+  min-width:200px;
   height:50px;
   font-size: 20px;
   background-color: white;
 }
 
 .commentForm textarea{
-  margin:20px;
-  height:200px;
-  width:400px;
+  flex-grow:0;
+height:200px;
+  min-width:200px;
   font-size:@baseFontSize;
 }
 

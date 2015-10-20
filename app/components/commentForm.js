@@ -21,6 +21,7 @@ class CommentForm extends React.Component{
     render(){
         return (
             <form className="commentForm" onSubmit={this.handleSubmit.bind(this)}>
+                <h1>评论表单</h1>
                 <input type="text" placeholder="姓名" ref="author" />
                 <textarea type="text" placeholder="留言内容" ref="text" >
                 </textarea>

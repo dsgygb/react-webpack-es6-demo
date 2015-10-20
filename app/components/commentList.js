@@ -12,9 +12,13 @@ class CommentList extends React.Component {
         );
 
         return (
+
+            <div className="commentListBox">
+                <h1>评论列表</h1>
             <div className="commentList">
                 {commentNodes}
             </div>
+                </div>
         );
     }
 };
